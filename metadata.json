@@ -1,5 +1,5 @@
 {
-  "name": "FaceHealth Scanner",
+  "name": "FaceDoc",
   "description": "An AI-based platform to analyze your health status from a facial photo, provide personalized advice, and share your wellness journey with friends and family.",
   "requestFramePermissions": [
     "camera"

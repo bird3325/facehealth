@@ -207,12 +207,12 @@ const HomePage: React.FC<HomePageProps> = ({
           <div className="p-4 border-t border-gray-200">
             <div className="text-center text-gray-500 text-xs space-y-2">
               <div>
-                <p className="font-semibold text-gray-700">FaceHealth Scanner</p>
+                <p className="font-semibold text-gray-700">FaceDoc</p>
                 <p>버전 1.0.0</p>
               </div>
               
               <div className="border-t border-gray-200 pt-2">
-                <p>© 2025 FaceHealth Scanner</p>
+                <p>© 2025 페이스닥</p>
                 <p>All rights reserved.</p>
               </div>
               
@@ -248,7 +248,7 @@ const HomePage: React.FC<HomePageProps> = ({
           >
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
           </svg>
-          FaceHealth Scanner
+          페이스닥
         </div>
         <button 
           onClick={toggleMenu}
