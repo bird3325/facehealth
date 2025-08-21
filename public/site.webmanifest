@@ -1,0 +1,26 @@
+{
+  "name": "페이스닥 - AI 얼굴 건강 분석",
+  "short_name": "페이스닥",
+  "description": "AI가 당신의 얼굴을 분석하여 건강 상태를 진단하고 맞춤형 케어 솔루션을 제공합니다.",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563EB",
+  "background_color": "#F8FAFC",
+  "categories": ["health", "medical", "lifestyle", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/maskable-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]

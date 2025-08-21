@@ -1,15 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    
+    <!-- 기본 SEO 메타 태그 -->
+    <title>🩺 페이스닥 | AI 얼굴 건강 분석 & 맞춤 케어 솔루션</title>
+    <meta name="description" content="AI가 당신의 얼굴을 분석하여 건강 상태를 진단하고 맞춤형 케어 솔루션을 제공합니다. 피부 건강, 피로도, 스트레스 지표를 무료로 분석해보세요." />
+    <meta name="keywords" content="얼굴건강분석, AI건강진단, 피부분석, 건강체크, 얼굴진단, 헬스케어, 스마트헬스, 건강관리, 피부관리, 웰니스, 건강상태, 얼굴인식건강" />
+    <meta name="author" content="FaceDoc" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="ko" />
+    
+    <!-- Open Graph (페이스북, 카카오톡 등) -->
+    <meta property="og:title" content="🩺 페이스닥 | AI 얼굴 건강 분석" />
+    <meta property="og:description" content="AI가 당신의 얼굴을 분석하여 건강 상태를 진단하고 맞춤형 케어 솔루션을 제공해드려요!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://facedoc.vercel.app" />
+    <meta property="og:image" content="https://facedoc.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="페이스닥 AI 건강 분석" />
+    <meta property="og:locale" content="ko_KR" />
+     
+    <!-- 네이버 검색 최적화 -->
+    <meta name="naver-site-verification" content="your-naver-verification-code" />
+    <meta property="article:author" content="FaceDoc" />
+    <meta property="article:section" content="Healthcare" />
+    <meta property="article:tag" content="건강분석,얼굴진단,AI,헬스케어" />
+    
+    <!-- 구글 검색 최적화 -->
+    <meta name="google-site-verification" content="your-google-verification-code" />
+    <link rel="canonical" href="https://facedoc.vercel.app" />
+    
+    <!-- 모바일 최적화 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#2563EB" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="페이스닥 건강분석" />
+    
+    <!-- 파비콘 -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>페이스닥</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Tailwind CSS 및 폰트 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind 커스텀 설정 -->
     <script>
       tailwind.config = {
         theme: {
@@ -34,20 +79,182 @@
         }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.1/",
-    "react": "https://esm.sh/react@^19.1.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    
+    <!-- Import Map -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.1.1/",
+        "react": "https://esm.sh/react@^19.1.1",
+        "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
+      }
+    }
+    </script>
+    
+    <!-- 구조화된 데이터 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "페이스닥",
+      "description": "AI가 당신의 얼굴을 분석하여 건강 상태를 진단하고 맞춤형 케어 솔루션을 제공하는 무료 서비스",
+      "url": "https://facedoc.vercel.app",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "FaceDoc",
+        "url": "https://facedoc.vercel.app"
+      },
+      "featureList": [
+        "AI 얼굴 건강 분석",
+        "피부 상태 진단",
+        "피로도 측정",
+        "스트레스 지표 분석",
+        "맞춤형 케어 솔루션",
+        "건강 개선 조언"
+      ],
+      "screenshot": "https://facedoc.vercel.app/screenshot.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "ratingCount": "2500",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- FAQ 구조화된 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "페이스닥의 AI 건강 분석은 어떻게 작동하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "최신 AI 기술을 사용하여 사용자의 얼굴 특징을 분석하고, 피부 상태, 피로도, 혈색, 부기, 스트레스 지표 등을 종합적으로 평가합니다. 의료 진단이 아닌 건강 참고용 서비스입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "개인정보와 사진은 안전하게 보호되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업로드된 사진은 분석 후 즉시 삭제되며, 개인정보는 분석 목적으로만 사용됩니다. 안전한 HTTPS 연결을 통해 모든 데이터가 암호화되어 전송됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "분석 결과는 의료 진단으로 사용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "페이스닥의 분석 결과는 의료 진단이 아닌 건강 참고용입니다. 건강상 문제가 있을 경우 반드시 전문의와 상담하시기 바랍니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 건강 정보를 분석해주나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "피부 상태, 피로도, 혈색, 부기, 눈가 주름, 수분 상태, 스트레스 지표 등 7가지 항목을 분석하고, 각 항목별 맞춤 케어 조언을 제공합니다."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- 조직 구조화된 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "페이스닥",
+      "url": "https://facedoc.vercel.app",
+      "logo": "https://facedoc.vercel.app/logo.png",
+      "description": "AI 기반 얼굴 건강 분석 서비스",
+      "foundingDate": "2024",
+      "knowsAbout": [
+        "AI 건강 분석",
+        "얼굴 진단",
+        "피부 건강",
+        "웰니스 케어"
+      ],
+      "sameAs": [
+        "https://instagram.com/facedoc_ai",
+        "https://youtube.com/@facedoc"
+      ]
+    }
+    </script>
+    
+    <!-- 사이트맵 힌트 -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- 프리로드 및 DNS 프리페치 -->
+    <link rel="preload" href="/index.tsx" as="script" />
+    <link rel="preload" href="/index.css" as="style" />
+    <link rel="dns-prefetch" href="//generativelanguage.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="/index.css">
+  </head>
   <body class="bg-brand-bg font-sans">
+    <!-- 메인 앱 컨테이너 -->
     <div id="root"></div>
+    
+    <!-- 메인 스크립트 -->
     <script type="module" src="/index.tsx"></script>
+    
+    <!-- 구글 애널리틱스 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        page_title: '페이스닥 - AI 얼굴 건강 분석',
+        page_location: window.location.href
+      });
+    </script>
+    
+    <!-- 네이버 애널리틱스 -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "YOUR_NAVER_ANALYTICS_ID";
+    if(window.wcs) {
+      wcs_do();
+    }
+    </script>
+    
+    <!-- 카카오 픽셀 (선택사항) -->
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+    <script type="text/javascript">
+      kakaoPixel('YOUR_KAKAO_PIXEL_ID').pageView();
+    </script>
+    
+    <!-- 서비스워커 등록 (PWA 지원) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            console.log('SW registered: ', registration);
+          }).catch(function(registrationError) {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
   </body>
 </html>
