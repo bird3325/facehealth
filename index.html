@@ -23,13 +23,13 @@
     <meta property="og:locale" content="ko_KR" />
      
     <!-- 네이버 검색 최적화 -->
-    <meta name="naver-site-verification" content="your-naver-verification-code" />
+    <meta name="naver-site-verification" content="43d18a6eca385ac7ef2c73cf45be33a0d56a437e" />
     <meta property="article:author" content="FaceDoc" />
     <meta property="article:section" content="Healthcare" />
     <meta property="article:tag" content="건강분석,얼굴진단,AI,헬스케어" />
     
     <!-- 구글 검색 최적화 -->
-    <meta name="google-site-verification" content="your-google-verification-code" />
+    <meta name="google-site-verification" content="fVejLOooAfBsa4NpUKKQ8yDvHxohrMmY--V_hqNipg4" />
     <link rel="canonical" href="https://facedoc.vercel.app" />
     
     <!-- 모바일 최적화 -->
@@ -215,46 +215,6 @@
     
     <!-- 메인 스크립트 -->
     <script type="module" src="/index.tsx"></script>
-    
-    <!-- 구글 애널리틱스 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID', {
-        page_title: '페이스닥 - AI 얼굴 건강 분석',
-        page_location: window.location.href
-      });
-    </script>
-    
-    <!-- 네이버 애널리틱스 -->
-    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-    <script type="text/javascript">
-    if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "YOUR_NAVER_ANALYTICS_ID";
-    if(window.wcs) {
-      wcs_do();
-    }
-    </script>
-    
-    <!-- 카카오 픽셀 (선택사항) -->
-    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
-    <script type="text/javascript">
-      kakaoPixel('YOUR_KAKAO_PIXEL_ID').pageView();
-    </script>
-    
-    <!-- 서비스워커 등록 (PWA 지원) -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            console.log('SW registered: ', registration);
-          }).catch(function(registrationError) {
-            console.log('SW registration failed: ', registrationError);
-          });
-        });
-      }
-    </script>
+
   </body>
 </html>
